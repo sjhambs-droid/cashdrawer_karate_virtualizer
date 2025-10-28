@@ -1,0 +1,19 @@
+{
+  "scenarioName": "CashDrawerScenario",
+  "requiredScenarioState": "Closed",
+  "newScenarioState": "Started",
+  "request": {
+    "method": "POST",
+    "urlPath": "/drawer/reset"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "result": "OK",
+      "message": "Scenario reset to initial state"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/drawer/open",
+    "queryParameters": {
+      "fail": {
+        "matches": "true"
+      }
+    }
+  },
+  "response": {
+    "status": 500,
+    "jsonBody": {
+      "result": "FAIL",
+      "error": "Drawer jammed or connection error"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

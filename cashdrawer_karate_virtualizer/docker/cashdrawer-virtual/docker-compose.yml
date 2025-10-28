@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  cashdrawer-mock:
+    image: wiremock/wiremock:2.35.0
+    container_name: cashdrawer-virtual
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files
+    environment:
+      - WIREMOCK_OPTIONS=--verbose
+    restart: unless-stopped

@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/drawer/open",
+    "queryParameters": {
+      "mode": {
+        "matches": "slow"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 3000,
+    "jsonBody": {
+      "result": "OK",
+      "message": "Drawer opened after delay"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

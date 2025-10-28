@@ -1,0 +1,19 @@
+{
+  "scenarioName": "CashDrawerScenario",
+  "requiredScenarioState": "Open",
+  "newScenarioState": "Closed",
+  "request": {
+    "method": "POST",
+    "urlPath": "/drawer/close"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "result": "OK",
+      "message": "Drawer closed successfully"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "scenarioName": "CashDrawerScenario",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "Open",
+  "request": {
+    "method": "POST",
+    "urlPath": "/drawer/open"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "result": "OK",
+      "message": "Drawer opened successfully"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
